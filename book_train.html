@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Train - Railway Reservation System</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container for the form */
+        .container {
+            background-image: url('images/rail1.jpg'); /* Use relative path if image is in an 'images' folder */
+            background-size: cover; /* Ensure the image covers the container */
+            background-position: center; /* Center the background image */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            color: purple /* Change text color to ensure visibility over the image */
+        }
+
+        /* Heading styles */
+        h2 {
+            color: purple; /* White text color for better visibility */
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        /* Label styles */
+        label {
+            display: block;
+            font-size: 16px;
+            color: purple; /* White text color for labels */
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        /* Input field styles */
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        /* Button styles */
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive design */
+        @media (max-width: 500px) {
+            .container {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            button {
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Book Train Ticket</h2>
+    <form id="bookForm">
+        <label for="trainNumber">Train Number</label>
+        <input type="text" id="trainNumber" name="trainNumber" >
+        
+        <label for="numPassengers">Number of Passengers</label>
+        <input type="number" id="numPassengers" name="numPassengers" min="4" required>
+
+        <button type="submit">Book Now</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById("bookForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const numPassengers = document.getElementById("numPassengers").value;
+
+        if (numPassengers && numPassengers > 0) {
+            alert("Booking successful!");
+            window.location.href = "view_booking.html";  // Redirect to the view booking page
+        } else {
+            alert("Please select the number of passengers.");
+        }
+    });
+</script>
+
+</body>
+</html>

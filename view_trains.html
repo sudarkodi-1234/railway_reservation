@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Trains - Railway Reservation System</title>
+    <style>
+        /* General styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        td {
+            background-color: #f9f9f9;
+        }
+
+        td a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Available Trains</h2>
+    <table>
+        <tr>
+            <th>Train No.</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Departure Time</th>
+            <th>Seats Available</th>
+            <th>Action</th>
+        </tr>
+        <!-- Train Entries -->
+        <tr>
+            <td>101</td>
+            <td>Station A</td>
+            <td>Station B</td>
+            <td>10:00 AM</td>
+            <td>50</td>
+            <td><a href="book_train.html">Book</a></td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Station B</td>
+            <td>Station C</td>
+            <td>2:00 PM</td>
+            <td>30</td>
+            <td><a href="book_train.html">Book</a></td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Station C</td>
+            <td>Station D</td>
+            <td>5:00 AM</td>
+            <td>20</td>
+            <td><a href="book_train.html">Book</a></td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>Station D</td>
+            <td>Station E</td>
+            <td>6:30 AM</td>
+            <td>40</td>
+            <td><a href="book_train.html">Book</a></td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>Station E</td>
+            <td>Station F</td>
+            <td>9:15 AM</td>
+            <td>25</td>
+            <td><a href="book_train.html">Book</a></td>
+        </tr>
+        <tr>
+            <td>106</td>
+            <td>Station F</td>
+            <td>Station G</td>
+            <td>12:00 PM</td>
+            <td>15</td>
+            <td><a href="book_train.html">Book</a></td>
+        </tr>
+        <tr>
+            <td>107</td>
+            <td>Station G</td>
+            <td>Station H</td>
+            <td>1:30 PM</td>
+            <td>60</td>
+            <td><a href="book_train.html">Book</a></td>
+        </tr>
+        <tr>
+            <td>108</td>
+            <td>Station H</td>
+            <td>Station I</td>
+            <td>3:00 PM</td>
+            <td>10</td>
+            <td><a href="book_train.html">Book</a></td>
+        </tr>
+        <tr>
+            <td>109</td>
+            <td>Station I</td>
+            <td>Station J</td>
+            <td>7:45 PM</td>
+            <td>45</td>
+            <td><a href="book_train.html">Book</a></td>
+        </tr>
+        <tr>
+            <td>110</td>
+            <td>Station J</td>
+            <td>Station K</td>
+            <td>8:30 PM</td>
+            <td>35</td>
+            <td><a href="book_train.html">Book</a></td>
+        </tr>
+        <tr>
+            <td>111</td>
+            <td>Station K</td>
+            <td>Station L</td>
+            <td>11:00 PM</td>
+            <td>50</td>
+            <td><a href="book_train.html">Book</a></td>
+        </tr>
+        <tr>
+            <td>112</td>
+            <td>Station L</td>
+            <td>Station M</td>
+            <td>1:00 AM</td>
+            <td>20</td>
+            <td><a href="book_train.html">Book</a></td>
+        </tr>
+        <tr>
+            <td>113</td>
+            <td>Station M</td>
+            <td>Station N</td>
+            <td>3:30 AM</td>
+            <td>25</td>
+            <td><a href="book_train.html">Book</a></td>
+        </tr>
+        <tr>
+            <td>114</td>
+            <td>Station N</td>
+            <td>Station O</td>
+            <td>4:00 AM</td>
+            <td>15</td>
+            <td><a href="book_train.html">Book</a></td>
+        </tr>
+        <tr>
+            <td>115</td>
+            <td>Station O</td>
+            <td>Station P</td>
+            <td>5:15 AM</td>
+            <td>40</td>
+            <td><a href="book_train.html">Book</a></td>
+        </tr>
+        <tr>
+            <td>116</td>
+            <td>Station P</td>
+            <td>Station Q</td>
+            <td>6:45 PM</td>
+            <td>60</td>
+            <td><a href="book_train.html">Book</a></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
